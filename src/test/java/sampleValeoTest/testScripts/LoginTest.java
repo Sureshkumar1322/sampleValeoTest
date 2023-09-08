@@ -5,7 +5,6 @@ import static org.testng.Assert.assertTrue;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 public class LoginTest {
@@ -19,5 +18,6 @@ public class LoginTest {
 	  driver.findElement(By.className("radius")).click();
 	  boolean displayed = driver.findElement(By.id("flash")).isDisplayed();
 	  assertTrue(displayed);
+	  System.out.println(displayed);
   }
 }
